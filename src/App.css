@@ -1,0 +1,96 @@
+/* Main layout styling */
+
+.app-container {
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* Header Section */
+.header-container h1 {
+  font-size: 40px;
+  color: #1f2937;
+}
+
+.header-container p {
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+/* Input Box */
+.input-box {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-box input {
+  width: 75%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.input-box button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-box button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Empty Box */
+.empty-box {
+  margin-top: 30px;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  color: #9ca3af;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Task List */
+.list-container {
+  margin-top: 30px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.task-item span {
+  flex: 1;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item button {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
