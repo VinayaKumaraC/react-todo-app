@@ -20,11 +20,11 @@ This is a simple To-Do List application built using React and Vite.
 
 1. Clone the repository:
 
-   git clone https://github.com/yourname/react-todo-app.git
+   git clone https://github.com/VinayaKumaraC/react-todo-app.git
 
 2. Navigate into the project folder:
 
-   cd react-todo-app
+   cd my-todo-app
 
 3. Install dependencies:
 
