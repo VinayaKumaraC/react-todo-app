@@ -1,3 +1,4 @@
+/* Global styles for entire app */
 
 * {
   margin: 0;
@@ -7,5 +8,5 @@
 }
 
 body {
-  background-color: #e6ecf5;
+  background-color: #a8c1e6;
 }
