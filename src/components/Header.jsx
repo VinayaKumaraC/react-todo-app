@@ -10,7 +10,7 @@ function Header({ addTask }) {
 
   return (
     <div className="header-container">
-      <h1>✅ My Tasks</h1>
+      <h1>✅  My Tasks</h1>
       <p>Stay organized and track your daily tasks</p>
 
       <div className="input-box">
