@@ -9,12 +9,12 @@
 /* Header Section */
 .header-container h1 {
   font-size: 40px;
-  color: rgba(20, 17, 17, 0.08);
+  color: #0c0c0c;
 }
 
 .header-container p {
   margin-top: 10px;
-  color: #6b7280;
+  color: #3d3e41;
 }
 
 /* Input Box */
