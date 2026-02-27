@@ -1,4 +1,4 @@
-import ToDoItem from "./ToDoitem";
+import ToDoItem from "./ToDoItem";
 
 function ToDoList({ tasks, deleteTask, toggleTask, editTask }) {
   if (tasks.length === 0) {
