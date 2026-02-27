@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// Toggle task completion status
 function ToDoItem({ task, deleteTask, toggleTask, editTask }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editText, setEditText] = useState(task.text);
@@ -34,7 +35,15 @@ function ToDoItem({ task, deleteTask, toggleTask, editTask }) {
         <button onClick={() => setIsEditing(true)}>Edit</button>
       )}
 
-      <button onClick={() => deleteTask(task.id)}>Delete</button>
+      <button onClick={() => {
+        if (window.confirm("Are you sure you want to delete this task?"))
+          {
+            deleteTask(task.id);
+          }
+        }}
+      >
+        Delete
+      </button>
     </div>
   );
 }

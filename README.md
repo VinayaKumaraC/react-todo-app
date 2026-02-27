@@ -1,20 +1,34 @@
 # React To-Do List Application
 
+## Project Overview
 This is a simple To-Do List application built using React and Vite.
 
 ## Features
 
 - Add new tasks
-- Delete tasks
-- Mark tasks as completed
 - Edit existing tasks
+- Delete tasks with confirmation
+- Mark tasks as completed
+- Input validation for empty tasks
+- Smooth hover animations
 
 ## Technologies Used
 
 - React (Functional Components)
 - useState Hook
+- JavaScript
 - Vite
 - CSS
+
+## Project Structure
+src/
+ ├── components/
+ │    ├── Header.jsx
+ │    ├── ToDoList.jsx
+ │    └── ToDoItem.jsx
+ ├── App.jsx
+ ├── App.css
+ └── index.css
 
 ## How to Run the Project
 

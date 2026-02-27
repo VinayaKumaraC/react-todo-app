@@ -4,13 +4,14 @@ import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
 
 function App() {
-  // STATE: Manages all tasks (20 marks requirement)
+  // useState hook to store all tasks
   const [tasks, setTasks] = useState([]);
 
   // ADD TASK
   const addTask = (text) => {
     if (text.trim() === "") return;
-
+    
+    // Function to add new task
     const newTask = {
       id: Date.now(),
       text,

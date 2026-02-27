@@ -4,9 +4,14 @@ function Header({ addTask }) {
   const [input, setInput] = useState("");
 
   const handleSubmit = () => {
-    addTask(input);
-    setInput("");
-  };
+  if (input.trim() === "") {
+    alert("Task cannot be empty!");
+    return;
+  }
+
+  addTask(input);
+  setInput("");
+};
 
   return (
     <div className="header-container">
