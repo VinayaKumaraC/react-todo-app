@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
 
 function App() {
-  // useState hook to store all tasks
-  const [tasks, setTasks] = useState([]);
 
+  // Load from localStorage
+  const [tasks, setTasks] = useState(() => {
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : [];
+  });
+
+  // Save to localStorage
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+  
   // ADD TASK
   const addTask = (text) => {
     if (text.trim() === "") return;
